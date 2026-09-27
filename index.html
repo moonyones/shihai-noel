@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shihai noel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+
+    <header class="principal">
+      <div class="enfeite">✦</div>
+      <p class="titulo">ÁRVORE DOS DESEJOS</p>
+    </header>
+
+
+    <section class="painel" id="painel">
+
+
+      <div class="controle-quantidade">
+
+        <button
+          type="button"
+          id="botao-diminuir"
+        >
+          −
+        </button>
+
+        <div class="display-quantidade">
+          <span id="quantidade">1</span>
+          <small>cartas</small>
+        </div>
+
+        <button
+          type="button"
+          id="botao-aumentar"
+        >
+          +
+        </button>
+
+      </div>
+
+
+      <div class="controle-desliza">
+
+        <input
+          type="range"
+          id="controle-quantidade"
+          min="1"
+          max="20"
+          value="1"
+        >
+
+        <div class="controle-quantidade">
+          <span>1</span>
+          <span>20</span>
+        </div>
+
+      </div>
+
+
+      <button
+        type="button"
+        class="botao"
+        id="botao-sortear"
+      >
+        <span>SORTEAR CARTAS</span>
+        <span class="arrow">→</span>
+      </button>
+
+    </section>
+
+
+    <section
+      class="resultados"
+      id="resultados"
+      hidden
+    >
+
+      <div
+        class="grade"
+        id="grade-cartas"
+      ></div>
+
+
+      <div class="voltar">
+
+        <button
+          type="button"
+          class="botao-voltar"
+          id="botao-voltar"
+        >
+          ← Voltar
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
